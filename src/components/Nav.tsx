@@ -13,9 +13,18 @@ function Nav({}: Props) {
         <Link to="/" className="logo__wrapper">
           <img src={AppleLogoGrey} alt="" />
         </Link>
-        <Link to="/store/">
-          <li className="nav__listItem">Store</li>
-        </Link>
+
+        <div className="dropdown">
+          <Link to="/store/">
+            <li className="nav__listItem">Store</li>
+          </Link>
+          <div className="dropdown-menu">
+            <li>Ac 1</li>
+            <li>Ac 2</li>
+            <li>Ac 3</li>
+          </div>
+        </div>
+
         <Link to="/mac/">
           <li className="nav__listItem">Mac</li>
         </Link>
