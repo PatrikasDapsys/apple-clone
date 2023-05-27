@@ -1,53 +1,66 @@
 .landing {
-    padding-top: 200px;
-    position: relative;
-    background: black;
-    display: flex;
-    justify-content: center;
-    max-height: 90vh;
+  padding-top: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-height: 90vh;
 }
 
 .landing__text {
-    color: white;
-    position: absolute;
-    top: 10%;
+  position: absolute;
+  top: 10%;
 }
 
 .landing__background {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    max-width: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
 }
 
 .landing__background img {
-    width: 80%;
+  width: 80%;
 }
 
 .landing__text > h1 {
-    font-size: 56px;
+  font-size: 56px;
 }
 
 .landing__text p {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 16px;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 .landing__buttons {
-    display: flex;
-    justify-content: space-around;
-    font-size: 21px;
-    color: #2997FF;
+  display: flex;
+  justify-content: space-around;
+  font-size: 21px;
+  color: #2997ff;
 }
 
 .landing__buttonLearnMore:hover,
 .landing__buttonBuy:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .landing__buttonLearnMore,
 .landing__buttonBuy {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+/* 14 PRO */
+
+.iphone14pro {
+    background-color: black;
+}
+
+.iphone14pro__text{
+    color: white;
+}
+
+/* REGULAR 14 */
+
+.iphone14 {
 }
