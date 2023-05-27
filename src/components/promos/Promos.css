@@ -1,0 +1,15 @@
+#promos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promos__card {
+  max-width: 50%;
+  width: 100%;
+  padding: 8px;
+}
+
+.promosImg__wrapper img {
+    width: 100%;
+}
