@@ -4,6 +4,7 @@
     background: black;
     display: flex;
     justify-content: center;
+    max-height: 90vh;
 }
 
 .landing__text {
@@ -16,6 +17,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    max-width: 900px;
 }
 
 .landing__background img {
