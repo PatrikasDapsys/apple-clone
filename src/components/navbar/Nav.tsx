@@ -1,4 +1,4 @@
-import AppleLogoGrey from "../images/apple-logo-grey.png";
+import AppleLogoGrey from "../../images/apple-logo-grey.png";
 import SearchIcon from "@mui/icons-material/Search";
 import LocalMallOutlinedIcon from "@mui/icons-material/LocalMallOutlined";
 import { Link } from "react-router-dom";
@@ -13,17 +13,17 @@ function Nav({}: Props) {
         <Link to="/" className="logo__wrapper">
           <img src={AppleLogoGrey} alt="" />
         </Link>
-
-        <div className="dropdown">
+{/* 
+        <div className="dropdown"> */}
           <Link to="/store/">
             <li className="nav__listItem">Store</li>
           </Link>
-          <div className="dropdown-menu">
+          {/* <div className="dropdown-menu">
             <li>Ac 1</li>
             <li>Ac 2</li>
             <li>Ac 3</li>
           </div>
-        </div>
+        </div> */}
 
         <Link to="/mac/">
           <li className="nav__listItem">Mac</li>
