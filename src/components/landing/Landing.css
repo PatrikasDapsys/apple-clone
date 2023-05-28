@@ -1,9 +1,8 @@
 .landing {
-  padding-top: 200px;
+  padding-top: 300px;
   position: relative;
   display: flex;
   justify-content: center;
-  max-height: 90vh;
 }
 
 .landing__text {
@@ -36,7 +35,7 @@
   display: flex;
   justify-content: space-around;
   font-size: 21px;
-  color: #2997ff;
+  color: var(--text-color-blue)
 }
 
 .landing__buttonLearnMore:hover,
@@ -53,14 +52,9 @@
 /* 14 PRO */
 
 .iphone14pro {
-    background-color: black;
+  background-color: black;
 }
 
-.iphone14pro__text{
-    color: white;
-}
-
-/* REGULAR 14 */
-
-.iphone14 {
+.iphone14pro__text {
+  color: white;
 }
