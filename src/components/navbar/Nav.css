@@ -48,7 +48,7 @@
 
 /* DROPDOWN MENU */
 
-/* .dropdown {
+.dropdown {
   position: relative;
   z-index: 1;
 }
@@ -57,7 +57,7 @@
   right: 0;
   left: 0;
   width: 100vw;
-  background-color: #000;
+  background-color: #470e0e;
   position: absolute;
   opacity: 0;
   text-align: center;
@@ -80,4 +80,4 @@
   visibility: visible;
   -webkit-transition: all .1s linear;
   transition: all .1s linear;
-} */
+}

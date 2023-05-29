@@ -7,7 +7,7 @@
 .promos__card {
   max-width: 50%;
   width: 100%;
-  overflow: hidden; /* Hide any overflowing content */
+  overflow: hidden;
   position: relative;
 }
 
