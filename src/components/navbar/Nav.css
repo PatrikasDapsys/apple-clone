@@ -56,9 +56,9 @@
 .dropdown-menu {
   right: 0;
   left: 0;
-  width: 100vw;
-  background-color: #470e0e;
-  position: absolute;
+  width: 100%;
+  background-color: rgba(22,22,23,255); 
+  position: fixed;
   opacity: 0;
   text-align: center;
   visibility: hidden;
@@ -79,5 +79,39 @@
   opacity: 1;
   visibility: visible;
   -webkit-transition: all .1s linear;
-  transition: all .1s linear;
+  transition: all .3s linear;
+}
+
+.navbar:hover {
+  background-color: rgba(22,22,23,255);
+}
+
+.dropdown-menu__container {
+  max-width: 900px;
+  display: flex;
+  margin: 62px auto;
+  text-align: left;
+  gap: 10%;
+}
+
+.dropdown-menu__sectionTitle {
+  font-size: 12px;
+  color: rgb(134, 134, 139);
+  padding-bottom: 16px;
+}
+
+.dropdown__main li{
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(233, 229, 229);
+  padding: 2px 0;
+}
+
+.dropdown__secondary {
+  font-size: 12px;
+}
+
+.dropdown__secondary li {
+  color: rgb(233, 229, 229);
+  padding: 3px 0;
 }
