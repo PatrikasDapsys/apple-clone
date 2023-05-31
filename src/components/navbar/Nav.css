@@ -51,6 +51,7 @@
 .dropdown {
   position: relative;
   z-index: 1;
+
 }
 
 .dropdown-menu {
@@ -105,6 +106,7 @@
   font-weight: bold;
   color: rgb(233, 229, 229);
   padding: 2px 0;
+  cursor: no-drop;
 }
 
 .dropdown__secondary {
@@ -115,6 +117,7 @@
   font-weight: bold;
   color: rgb(233, 229, 229);
   padding: 3px 0;
+  cursor: no-drop;
 }
 
 .dropdown-menu__extra {
@@ -123,4 +126,5 @@
   color: rgb(233, 229, 229);
   font-size: 10px;
   letter-spacing: 0.5px;
+  cursor: no-drop;
 }
