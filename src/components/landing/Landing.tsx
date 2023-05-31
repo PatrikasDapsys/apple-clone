@@ -8,7 +8,7 @@ type Props = {};
 
 function Landing({}: Props) {
   return (
-    <section>
+    <section id="landing">
       <div className="iphone14pro">
         <Link className="landing" to="/iphone/">
           <figure className="landing__background">

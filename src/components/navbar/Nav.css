@@ -26,7 +26,7 @@
 }
 
 .nav__listItem {
-  padding: 17px 4px;
+  padding: 17px 15px;
 }
 
 .nav__listItem:hover {
@@ -112,6 +112,15 @@
 }
 
 .dropdown__secondary li {
+  font-weight: bold;
   color: rgb(233, 229, 229);
   padding: 3px 0;
+}
+
+.dropdown-menu__extra {
+  margin-top: 6px;
+  font-weight: 500;
+  color: rgb(233, 229, 229);
+  font-size: 10px;
+  letter-spacing: 0.5px;
 }
