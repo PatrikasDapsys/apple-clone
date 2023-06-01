@@ -39,6 +39,7 @@
 .footer__linksColumn--section li {
   color: #424245;
   margin: 0 20px 10px 0;
+  cursor: no-drop;
 }
 
 .footer__linksColumn--section {
@@ -55,6 +56,7 @@
 .footer__linkExtra--link {
   color: blue;
   text-decoration: underline;
+  cursor: no-drop;
 }
 
 .footer__legal {
@@ -67,6 +69,7 @@
 
 .footer__legalMiddle {
   display: flex;
+  cursor: no-drop;
 }
 
 .footer__divider--vertical {
