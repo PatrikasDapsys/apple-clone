@@ -1,0 +1,42 @@
+.moviesCard {
+  position: relative;
+}
+
+.moviesCard__button {
+  white-space: nowrap;
+  padding: 11px 21px;
+  background-color: rgba(255, 255, 255);
+  border-radius: 100px;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 32px;
+}
+.moviesCard__button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: no-drop;
+}
+
+.moviesCard__img--wrapper img {
+  width: 100%;
+}
+
+.moviesCard__bottom {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  max-width: 75%;
+}
+
+.moviesCard__bottom h4 {
+  white-space: nowrap;
+}
+
+.moviesCard__bottom p {
+    font-weight: 400;
+}
