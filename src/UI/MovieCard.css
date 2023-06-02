@@ -40,3 +40,21 @@
 .moviesCard__bottom p {
     font-weight: 400;
 }
+
+@media (max-width: 740px) {
+ .moviesCard__bottom h4, 
+ .moviesCard__bottom p {
+  display: none;
+ }
+}
+@media (max-width: 570px) {
+ .moviesCard__button{
+  padding: 8px 12px;
+  font-size: 12px;
+ }
+}
+@media (max-width: 400px) {
+ .moviesCard__button{
+  display: none;
+ }
+}
