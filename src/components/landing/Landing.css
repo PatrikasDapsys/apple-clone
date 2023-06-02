@@ -58,3 +58,21 @@
 .iphone14pro__text {
   color: white;
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 420px){
+  .landing__text {
+    top: 20%;
+  }
+  .landing__text h1{
+    font-size: 32px;
+  }
+  .landing__text p {
+    font-size: 24px;
+  }
+  .landing__buttonLearnMore,
+  .landing__buttonBuy {
+    font-size: 16px;
+  }
+}
