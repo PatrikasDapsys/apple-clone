@@ -1,8 +1,25 @@
+import { useEffect, useState } from "react";
 import "./Footer.css";
 
 type Props = {};
 
 function Footer({}: Props) {
+  const [currentWindowWidth, setCurrentWindowWidth] = useState(
+    window.innerWidth
+  );
+
+  function handleWindowResize() {
+    setCurrentWindowWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+
   return (
     <section id="footer">
       <div className="footer__container">
@@ -173,14 +190,12 @@ function Footer({}: Props) {
           &nbsp; or &nbsp;{" "}
           <span className="footer__linkExtra--link">other retailer</span>&nbsp;
           near you. &nbsp;
-          <span style={{whiteSpace: "nowrap"}}>
-            Or call 1-800-MY-APPLE.
-          </span>
+          <span style={{ whiteSpace: "nowrap" }}>Or call 1-800-MY-APPLE.</span>
         </div>
         <div className="footer__divider--horizontal"></div>
         <div className="footer__legal">
-          <div className="footer__legalLeft" style={{whiteSpace: "nowrap"}}>
-              Copyright © 2023 Apple Inc. All rights reserved.
+          <div className="footer__legalLeft" style={{ whiteSpace: "nowrap" }}>
+            Copyright © 2023 Apple Inc. All rights reserved.
           </div>
 
           <div className="footer__legalMiddle">
