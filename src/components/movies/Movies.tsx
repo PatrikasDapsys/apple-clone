@@ -88,8 +88,9 @@ function Movies({}: Props) {
     <section className="movies">
       <div className="container">
         <Slider {...settings}>
-          {movies.map((movie) => (
+          {movies.map((movie, index) => (
             <MovieCard
+              key={index}
               image={movie.image}
               genre={movie.genre}
               description={movie.description}

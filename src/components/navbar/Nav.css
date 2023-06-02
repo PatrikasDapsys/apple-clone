@@ -13,6 +13,7 @@
 }
 
 .nav__container {
+  padding: 0 12px;
   max-width: 900px;
   width: 100%;
   display: flex;
@@ -27,6 +28,7 @@
 
 .nav__listItem {
   padding: 17px 15px;
+  white-space: nowrap;
 }
 
 .nav__listItem:hover {
@@ -46,19 +48,38 @@
   width: 14px;
 }
 
+.nav__listRight {
+  display: flex;
+  font-size: 14px;
+}
+
+.nav__listRight li {
+  margin-right: 16px;
+}
+
+.nav__listRightMenu {
+  display: none;
+}
+
+.nav__listRightMenu {
+  background: transparent;
+  border: none;
+  color: var(--text-color-gray);
+  cursor: pointer;
+}
+
 /* DROPDOWN MENU */
 
 .dropdown {
   position: relative;
   z-index: 1;
-
 }
 
 .dropdown-menu {
   right: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(22,22,23,255); 
+  background-color: rgba(22, 22, 23, 255);
   position: fixed;
   opacity: 0;
   text-align: center;
@@ -79,12 +100,12 @@
 .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: all .1s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.3s linear;
 }
 
 .navbar:hover {
-  background-color: rgba(22,22,23,255);
+  background-color: rgba(22, 22, 23, 255);
 }
 
 .dropdown-menu__container {
@@ -101,7 +122,7 @@
   padding-bottom: 16px;
 }
 
-.dropdown__main li{
+.dropdown__main li {
   font-size: 24px;
   font-weight: bold;
   color: rgb(233, 229, 229);
@@ -127,4 +148,82 @@
   font-size: 10px;
   letter-spacing: 0.5px;
   cursor: no-drop;
+}
+
+/* BURGER MENU */
+
+.nav__burgerMenu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #161617;
+  z-index: 2;
+  padding: 32px;
+}
+
+.nav__burgerMenu--close {
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.nav__burgerMenuItem {
+  font-size: 32px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.nav__burgerMenuChev {
+  opacity: 0;
+  animation: chevron-animation 240ms cubic-bezier(0.4, 0, 0.6, 1) both;
+}
+
+@keyframes chevron-animation {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+.nav__burgerMenuItem:hover .nav__burgerMenuChev {
+  visibility: visible;
+  transition: visibility 0.24s step-start;
+  opacity: 1;
+  animation: globalnav-chevron-slide-in-hover 0.24s cubic-bezier(0.4, 0, 0.6, 1)
+    both;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .nav__listItem {
+    display: none;
+  }
+  .nav__listSearch,
+  .nav__listBag {
+    display: flex;
+  }
+  .nav__listRightMenu {
+    display: flex;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav__burgerMenuItem {
+    font-size: 24px;
+  }
 }

@@ -1,12 +1,22 @@
 import AppleLogoGrey from "../../images/apple-logo-grey.png";
 import SearchIcon from "@mui/icons-material/Search";
 import LocalMallOutlinedIcon from "@mui/icons-material/LocalMallOutlined";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import "./Nav.css";
 
 type Props = {};
 
 function Nav({}: Props) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  function toggleMenu() {
+    setIsMenuOpen(!isMenuOpen);
+    document.body.style.overflow = isMenuOpen ? 'auto' : 'hidden';
+  }
+
   return (
     <nav id="nav" className="navbar">
       <div className="nav__container">
@@ -385,13 +395,65 @@ function Nav({}: Props) {
           </div>
         </div>
 
-        <li className="nav__listItem">
-          <SearchIcon />
-        </li>
-        <li className="nav__listItem">
-          <LocalMallOutlinedIcon />
-        </li>
+        <div className="nav__listRight">
+          <li className="">
+            <SearchIcon />
+          </li>
+          <li className="">
+            <LocalMallOutlinedIcon />
+          </li>
+          <button className="nav__listRightMenu" onClick={() => toggleMenu()}>
+            <MenuIcon />
+          </button>
+        </div>
       </div>
+      {isMenuOpen && (
+        <div className="nav__burgerMenu">
+          <div className="nav__burgerMenu--close" onClick={() => toggleMenu()}>
+            <CloseIcon fontSize="large" />
+          </div>
+          <div className="nav__burgerMenuItem">
+            <h4>Store</h4>
+            <div className="nav__burgerMenuChev">&gt;</div>
+          </div>
+          <div className="nav__burgerMenuItem">
+            <h4>Mac</h4>
+            <div className="nav__burgerMenuChev">&gt;</div>
+          </div>
+          <div className="nav__burgerMenuItem">
+            <h4>iPad</h4>
+            <div className="nav__burgerMenuChev">&gt;</div>
+          </div>
+          <div className="nav__burgerMenuItem">
+            <h4>iPhone</h4>
+            <div className="nav__burgerMenuChev">&gt;</div>
+          </div>
+          <div className="nav__burgerMenuItem">
+            <h4>Watch</h4>
+            <div className="nav__burgerMenuChev">&gt;</div>
+          </div>
+          <div className="nav__burgerMenuItem">
+            <h4>AirPods</h4>
+            <div className="nav__burgerMenuChev">&gt;</div>
+          </div>
+          <div className="nav__burgerMenuItem">
+            <h4>TV & Home</h4>
+            <div className="nav__burgerMenuChev">&gt;</div>
+          </div>
+          <div className="nav__burgerMenuItem">
+            <h4>Entertainment</h4>
+            <div className="nav__burgerMenuChev">&gt;</div>
+          </div>
+          <div className="nav__burgerMenuItem">
+            <h4>Accessories</h4>
+            <div className="nav__burgerMenuChev">&gt;</div>
+          </div>
+          <div className="nav__burgerMenuItem">
+            <h4>Support</h4>
+            <div className="nav__burgerMenuChev">&gt;</div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
