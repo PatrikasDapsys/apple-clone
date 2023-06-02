@@ -29,7 +29,7 @@ function PromosCard({
           className="promos__text"
           style={{
             color: `${textColor}`,
-            top: textPosition === "bottom" ? "calc(100% - 18%)" : "18%",
+            top: textPosition === "bottom" ? "calc(100% - 25%)" : "20%",
           }}
         >
           <h3>
