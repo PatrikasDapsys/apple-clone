@@ -70,11 +70,68 @@
 .footer__legalMiddle {
   display: flex;
   cursor: no-drop;
+  flex-wrap: wrap;
+  white-space: nowrap;
 }
 
 .footer__divider--vertical {
   width: 1px;
   height: 120%;
+  max-height: 20px;
   background: #c7c7c7;
   margin: 0 10px;
+}
+
+/* RESPONSIVE */
+
+.footer__links--small {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__linksTitle--small {
+  display: flex;
+  justify-content: space-between;
+  color: #0e0e0e;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 1px solid #c7c7c7;
+  padding: 6px 0 12px;
+  cursor: pointer;
+}
+
+.footer__linksListItems--small {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0 8px;
+}
+
+.footer__linksListItems--small li {
+  font-size: 12px;
+  padding: 6px 14px;
+}
+.footer__linksListItems--small li:hover {
+  text-decoration: underline;
+}
+
+.footer__linksListItems--small {
+  position: relative;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+.footer__linksListItems--small.show {
+  max-height: 300px;
+  transition: max-height 0.5s ease;
+}
+
+@media (max-width:840px) {
+  .footer__legalRight {
+    display: none;
+  }
+  .footer__legalLeft {
+    margin-bottom: 16px;
+  }
 }
