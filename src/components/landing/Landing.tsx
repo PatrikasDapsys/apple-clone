@@ -10,7 +10,7 @@ function Landing({}: Props) {
   return (
     <section id="landing">
       <div className="iphone14pro">
-        <Link className="landing" to="/iphone/">
+        <Link className="landing" to="/">
           <figure className="landing__background">
             <img src={Background14Pro} alt="" />
           </figure>
@@ -36,7 +36,7 @@ function Landing({}: Props) {
         </Link>
       </div>
       <div className="iphone14">
-        <Link className="landing" to="/iphone/">
+        <Link className="landing" to="/">
           <figure className="landing__background">
             <img src={Background14} alt="" />
           </figure>

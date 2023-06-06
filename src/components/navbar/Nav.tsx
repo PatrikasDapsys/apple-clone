@@ -25,7 +25,7 @@ function Nav({}: Props) {
         </Link>
 
         <div className="dropdown">
-          <Link to="/store/">
+          <Link to="/">
             <li className="nav__listItem">Store</li>
           </Link>
           <div className="dropdown-menu">
@@ -61,7 +61,7 @@ function Nav({}: Props) {
         </div>
 
         <div className="dropdown">
-          <Link to="/mac/">
+          <Link to="/">
             <li className="nav__listItem">Mac</li>
           </Link>
           <div className="dropdown-menu">
@@ -102,7 +102,7 @@ function Nav({}: Props) {
         </div>
 
         <div className="dropdown">
-          <Link to="/ipad/">
+          <Link to="/">
             <li className="nav__listItem">iPad</li>
           </Link>
           <div className="dropdown-menu">
@@ -142,7 +142,7 @@ function Nav({}: Props) {
         </div>
 
         <div className="dropdown">
-          <Link to="/iphone/">
+          <Link to="/">
             <li className="nav__listItem">iPhone</li>
           </Link>
           <div className="dropdown-menu">
@@ -184,7 +184,7 @@ function Nav({}: Props) {
         </div>
 
         <div className="dropdown">
-          <Link to="/watch/">
+          <Link to="/">
             <li className="nav__listItem">Watch</li>
           </Link>
           <div className="dropdown-menu">
@@ -222,7 +222,7 @@ function Nav({}: Props) {
         </div>
 
         <div className="dropdown">
-          <Link to="/airpods">
+          <Link to="/">
             <li className="nav__listItem">AirPods</li>
           </Link>
           <div className="dropdown-menu">
@@ -255,7 +255,7 @@ function Nav({}: Props) {
         </div>
 
         <div className="dropdown">
-          <Link to="/tv-home/">
+          <Link to="/">
             <li className="nav__listItem">TV & Home</li>
           </Link>
           <div className="dropdown-menu">
@@ -296,7 +296,7 @@ function Nav({}: Props) {
         </div>
 
         <div className="dropdown">
-          <Link to="/entertainment">
+          <Link to="/">
             <li className="nav__listItem">Entertainment</li>
           </Link>
           <div className="dropdown-menu">
@@ -326,7 +326,7 @@ function Nav({}: Props) {
         </div>
 
         <div className="dropdown">
-          <Link to="/accessories">
+          <Link to="/">
             <li className="nav__listItem">Accessories</li>
           </Link>
           <div className="dropdown-menu">
@@ -356,7 +356,7 @@ function Nav({}: Props) {
         </div>
 
         <div className="dropdown">
-          <Link to="/support">
+          <Link to="/">
             <li className="nav__listItem">Support</li>
           </Link>
           <div className="dropdown-menu">

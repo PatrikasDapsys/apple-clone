@@ -177,6 +177,7 @@
   justify-content: space-between;
   color: white;
   margin-bottom: 8px;
+  cursor: no-drop
 }
 
 .nav__burgerMenuChev {

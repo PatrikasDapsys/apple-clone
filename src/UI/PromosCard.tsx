@@ -37,7 +37,7 @@ function PromosCard({
             {title}
           </h3>
           <p>{description}</p>
-          <Link to={link} className="promos__link">{linkText} &#62;</Link>
+          <Link to="/" className="promos__link">{linkText} &#62;</Link>
         </div>
       </div>
   );
